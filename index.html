@@ -20,27 +20,40 @@
 </head>
 
 <body>
-
-  <div class="header">
-
-    <img class="logo" src="./assets/img/logo.png" alt="logo">
-
+  <!-- header -->
+  <div class="header border-bottom border-danger border-5">
+        <div class="col-12 d-flex justify-content-center">
+          <img class="logo" src="./assets/img/logo.png" alt="logo">
+        </div>
   </div>
 
   <main class="bg-light">
     <div class="container">
       <div class="row">
-
         <div class="col-12">
-
-          <h1 class="title my-4 text-center">Calcola il prezzo del tuo biglietto</h1>
-
+          <h1 class="title my-4 text-center fs-2">Calcola il prezzo del tuo biglietto</h1>
         </div>
-
+        <!-- form -->
         <form action="" id="train-ticket">
-
-          <input type="text" id="distance-input" placeholder="Inserisci i Km" required><br><br>
-          <input type="text" id="age-input" placeholder="Inserisci la tua età" required><br><br>
+          <div class="row">
+<!-- Nome e cognome -->
+            <div class="col-12 mb-3">
+              <span class="fw-medium">Nome e Cognome</span>
+              <input type="text" id="distance-input" class="form-control mt-2" placeholder="Inserisci nome e cognome"
+                required>
+            </div>
+<!-- km percorsi -->
+            <div class="col-6">
+              <span class="fw-medium">Km da percorrere</span>
+              <input type="text" id="distance-input" class="form-control mt-2" placeholder="Inserisci il numero di Km"
+                required>
+            </div>
+<!-- età -->
+            <div class="col-6">
+              <span class="fw-medium">Inserisci la tua età</span>
+              <input type="text" id="age-input" class="form-control mt-2" placeholder="Inserisci la tua età" required>
+            </div>
+          </div>
 
           <button type="submit" id="button-ticket">
             Genera biglietto

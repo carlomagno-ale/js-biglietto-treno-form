@@ -5,26 +5,8 @@
   /*border: 1px dashed black;*/
 }
 
-:root {
+.logo {
 
-  --primary-color: #d70d15;
+  width: 300px;
+
 }
-
-.header {
-
-  display: flex;
-  justify-content: center;
-  border-bottom: 0.5rem solid var(--primary-color);
-
-  .logo {
-
-    width: 300px;
-  
-  }
-}
-
-.title{
-
-  font-size: 1.7rem;
-}
-
