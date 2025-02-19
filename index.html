@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Biglietto del treno - Form</title>
-
   <!-- CSS -->
   <link rel="stylesheet" href="./style.css">
-
+  <!-- JavaScript -->
+  <script defer src="./script.js"></script>
   <!-- Bootstrap -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css'
     integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=='
     crossorigin='anonymous' />
+  <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <!-- JavaScript -->
-  <script defer src="./script.js"></script>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
             <!-- Nome e cognome -->
             <div class="col-12 mb-3">
               <span class="fw-medium">Nome e Cognome</span>
-              <input type="text" id="distance-input" class="form-control mt-2" placeholder="Inserisci nome e cognome"
+              <input type="text" id="name-input" class="form-control mt-2" placeholder="Inserisci nome e cognome"
                 required>
             </div>
             <!-- km percorsi -->
@@ -64,20 +64,19 @@
             </button>
           </div>
 
-          <div class="card">
-            <div class="card-header">
-              Ticket
+          <div class="card mb-3">
+            <div class="card-header bg-danger text-white">
+             <span><i class="bi bi-ticket-perforated-fill"></i> Ticket</span> 
             </div>
             <div class="card-body">
-              <span class="distance-card">
-                distanza
-              </span>
-              <span class="age-card">
-                età
-              </span>
-              <span class="price-card">
-                costo
-              </span>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span class="name-card">Nome passeggero</span></li>
+                <li class="list-group-item"><span class="distance-card">Distanza da percorrere</span></li>
+                <li class="list-group-item"><span class="age-card">Sconto</span></li>
+              </ul>
+              <div class="card-footer bg-body-secondary">
+                <span class="price-card">Costo</span>
+              </div>
             </div>
           </div>
 

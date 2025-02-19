@@ -43,22 +43,28 @@ formEl.addEventListener('submit', function (e) {
     if (userChoiceAge <= 17) {
         const discountAmountMinor = (tripPrice * discountMinor) / 100;
         const totalPrice = (tripPrice - discountAmountMinor);
+
         console.log(`il tuo biglietto costa: ${totalPrice.toFixed(2)}€, hai risparmiato ${discountAmountMinor.toFixed(2)}€`);
+
         priceCard.innerHTML = `il tuo biglietto costa: ${totalPrice.toFixed(2)}€, hai risparmiato ${discountAmountMinor.toFixed(2)}€`;
 
     } else if (userChoiceAge >= 65) {
         const discountAmountSenior = (tripPrice * discountSenior) / 100;
+
         const totalPrice = (tripPrice - discountAmountSenior);
+
         console.log(`il tuo biglietto costa: ${totalPrice.toFixed(2)}€ hai risparmiato ${discountAmountSenior.toFixed(2)}€`);
-        priceCard.innerHTML = `il tuo biglietto costa: ${totalPrice.toFixed(2)}€, hai risparmiato ${discountAmountMinor.toFixed(2)}€`;
+
+        priceCard.innerHTML = `il tuo biglietto costa: ${totalPrice.toFixed(2)}€, hai risparmiato ${discountSenior.toFixed(2)}€`;
+
     } else {
         console.log(`Il tuo biglietto costa: ${tripPrice.toFixed(2)}€`);
         priceCard.innerHTML = `il tuo biglietto costa: ${tripPrice.toFixed(2)}€`;
 
     }
 
-    distanceCard.innerHTML = distEl.value
-    ageCard.innerHTML = distEl.value
+    distanceCard.innerHTML = `La tratta valida per questo biglietto è di ${distEl.value}Km`
+    ageCard.innerHTML = `La tua età è di ${ageEl.value}`
     
  })
 
