@@ -21,6 +21,7 @@ const formEl = document.getElementById('train-ticket')
 const distEl = document.getElementById('distance-input')
 const ageEl = document.getElementById('age-input')
 const nameEl = document.getElementById('name-input')
+//const btnEl = document.getElementById('btn-t')
 
 const nameCard = document.querySelector('.card .name-card')
 const distanceCard = document.querySelector('.card .distance-card')
@@ -69,5 +70,15 @@ formEl.addEventListener('submit', function (e) {
     
  })
 
+ /*function ticketToggle() {
+    const cardToggle = document.getElementById('card');
+    if (cardToggle.style.display === "none") {
+        cardToggle.style.display = "block";
+    } else {
+        cardToggle.style.display = "none";
+    }
+  }
+
+  btnEl.addEventListener('click', ticketToggle);*/
 
 
