@@ -1,11 +1,29 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*border: 1px dashed black;*/
 }
 
-body
-{
+main {
   padding: 2rem;
 }
+
+:root {
+
+  --primary-color: #d70d15;
+}
+
+.header {
+
+  display: flex;
+  justify-content: center;
+  border-bottom: 0.5rem solid var(--primary-color);
+
+  .logo {
+
+    width: 300px;
+  
+  }
+}
+

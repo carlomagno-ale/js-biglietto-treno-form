@@ -21,38 +21,46 @@
 
 <body>
 
-  <form action="" id="train-ticket">
+  <div class="header">
 
-    <input type="text" id="distance-input" placeholder="Inserisci i Km" required><br><br>
-    <input type="text" id="age-input" placeholder="Inserisci la tua età" required><br><br>
+    <img class="logo" src="./assets/img/logo.png" alt="logo">
 
-    <button type="submit" id="button-ticket">
-      Genera biglietto
-    </button>
+  </div>
 
-    <button type="reset" id="cancel">
-      Annulla
-    </button>
+  <main>
 
-    <div class="card">
-      <div class="card-header">
-        Ticket
+    <form action="" id="train-ticket">
+
+      <input type="text" id="distance-input" placeholder="Inserisci i Km" required><br><br>
+      <input type="text" id="age-input" placeholder="Inserisci la tua età" required><br><br>
+
+      <button type="submit" id="button-ticket">
+        Genera biglietto
+      </button>
+
+      <button type="reset" id="cancel">
+        Annulla
+      </button>
+
+      <div class="card">
+        <div class="card-header">
+          Ticket
+        </div>
+        <div class="card-body">
+          <span class="distance-card">
+            distanza
+          </span>
+          <span class="age-card">
+            età
+          </span>
+          <span class="price-card">
+            costo
+          </span>
+        </div>
       </div>
-      <div class="card-body">
-        <span class="distance-card">
-          distanza
-        </span>
-        <span class="age-card">
-          età
-        </span>
-        <span class="price-card">
-          costo
-        </span>
-      </div>
-    </div>
 
-  </form>
-
+    </form>
+  </main>
 </body>
 
 </html>
