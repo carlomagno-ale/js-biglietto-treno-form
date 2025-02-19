@@ -13,33 +13,19 @@ const formEl = document.getElementById('train-ticket')
 const distEl = document.getElementById('distance')
 const ageEl = document.getElementById('age')
 
-
-formEl.addEventListener('submit', function (ticket){
+formEl.addEventListener('submit', function (ticket) {
 
     ticket.preventDefault();
-    console.log(distEl.value, ageEl.value)
+    const userChoiceKm = distEl.value
+    const userChoiceAge = ageEl.value
+    console.log(userChoiceKm, userChoiceAge)
 
+    const price = 0.21;
+    const tripPrice = userChoiceKm * price;
+    console.log(tripPrice);
 
-
-})
-
-
-/* esercizio old aggiornato
-
-const userChoiceKm = ''
-console.log(userChoiceKm);
-
-const userChoiceAge = ''
-console.log(userChoiceAge);
-
-const price = 0.21;
-const tripPrice = userChoiceKm * price;
-console.log(tripPrice);
-
-const discountMinor = 20;
-const discountSenior = 40;
-
-function calcticket(Km, Age) {
+    const discountMinor = 20;
+    const discountSenior = 40;
 
     if (userChoiceAge <= 17) {
         const discountAmountMinor = (tripPrice * discountMinor) / 100;
@@ -53,8 +39,9 @@ function calcticket(Km, Age) {
     } else {
         console.log(alert(`Il tuo biglietto costa: ${triPrice.toFixed(2)}€`));
     }
-}
-*/
+
+})
+
 
 /*
 MILESTONE 2:
