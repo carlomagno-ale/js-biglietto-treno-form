@@ -31,14 +31,14 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="title my-4 text-center fs-2">Calcola il prezzo del tuo biglietto</h1>
+          <h1 class="title my-3 text-center fs-2">Calcola il prezzo del tuo biglietto</h1>
         </div>
         <!-- form -->
         <form action="" id="train-ticket">
           <div class="row">
             <!-- Nome e cognome -->
             <div class="col-12 mb-3">
-              <span class="fw-medium">Nome e Cognome</span>
+              <span class="fw-medium">Nome del passeggero</span>
               <input type="text" id="name-input" class="form-control mt-2" placeholder="Inserisci nome e cognome"
                 required>
             </div>
@@ -63,23 +63,22 @@
               Annulla
             </button>
           </div>
-
-          <div class="card mb-3">
+          <!-- ticket -->
+          <div class="card mb-4">
             <div class="card-header bg-danger text-white">
              <span><i class="bi bi-ticket-perforated-fill"></i> Ticket</span> 
             </div>
             <div class="card-body">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item"><span class="name-card">Nome passeggero</span></li>
-                <li class="list-group-item"><span class="distance-card">Distanza da percorrere</span></li>
-                <li class="list-group-item"><span class="age-card">Sconto</span></li>
+                <li class="list-group-item"><span class="name-card fw-bold">Nome passeggero</span></li>
+                <li class="list-group-item"><span class="distance-card text-secondary">Distanza da percorrere</span></li>
+                <li class="list-group-item"><span class="age-card fw-medium text-success">Sconto</span></li>
               </ul>
               <div class="card-footer bg-body-secondary">
-                <span class="price-card">Costo</span>
+                <span class="price-card"><b>Costo Totale:</b></span>
               </div>
             </div>
           </div>
-
         </form>
       </div>
     </div>

@@ -20,7 +20,9 @@ Ora che la logica è funzionante in pagina, possiamo andare a dedicarci allo sti
 const formEl = document.getElementById('train-ticket')
 const distEl = document.getElementById('distance-input')
 const ageEl = document.getElementById('age-input')
+const nameEl = document.getElementById('name-input')
 
+const nameCard = document.querySelector('.card .name-card')
 const distanceCard = document.querySelector('.card .distance-card')
 const ageCard = document.querySelector('.card .age-card')
 const priceCard = document.querySelector('.card .price-card')
@@ -46,25 +48,24 @@ formEl.addEventListener('submit', function (e) {
 
         console.log(`il tuo biglietto costa: ${totalPrice.toFixed(2)}€, hai risparmiato ${discountAmountMinor.toFixed(2)}€`);
 
-        priceCard.innerHTML = `il tuo biglietto costa: ${totalPrice.toFixed(2)}€, hai risparmiato ${discountAmountMinor.toFixed(2)}€`;
+        ageCard.innerHTML = `Sconto Giovani: -20% (hai risparmiato ${discountAmountMinor.toFixed(2)}€)`
+        priceCard.innerHTML = `<b>Costo Totale:</b> <s>${tripPrice.toFixed(2)}€</s> <b> ${totalPrice.toFixed(2)}€</b>`;
 
     } else if (userChoiceAge >= 65) {
         const discountAmountSenior = (tripPrice * discountSenior) / 100;
-
         const totalPrice = (tripPrice - discountAmountSenior);
-
         console.log(`il tuo biglietto costa: ${totalPrice.toFixed(2)}€ hai risparmiato ${discountAmountSenior.toFixed(2)}€`);
-
-        priceCard.innerHTML = `il tuo biglietto costa: ${totalPrice.toFixed(2)}€, hai risparmiato ${discountSenior.toFixed(2)}€`;
+        ageCard.innerHTML = `Sconto Anziani: -40% (hai risparmiato ${discountAmountSenior.toFixed(2)}€)`
+        priceCard.innerHTML = `<b>Costo Totale:</b> <s>${tripPrice.toFixed(2)}€</s> <b> ${totalPrice.toFixed(2)}€</b>`;
 
     } else {
         console.log(`Il tuo biglietto costa: ${tripPrice.toFixed(2)}€`);
-        priceCard.innerHTML = `il tuo biglietto costa: ${tripPrice.toFixed(2)}€`;
-
+        ageCard.innerHTML = ``
+        priceCard.innerHTML = `<b>Costo Totale:</b> ${tripPrice.toFixed(2)}€`;
     }
 
+    nameCard.innerText = `${nameEl.value.toUpperCase()}`
     distanceCard.innerHTML = `La tratta valida per questo biglietto è di ${distEl.value}Km`
-    ageCard.innerHTML = `La tua età è di ${ageEl.value}`
     
  })
 
