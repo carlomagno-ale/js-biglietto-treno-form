@@ -22,9 +22,9 @@
 <body>
   <!-- header -->
   <div class="header border-bottom border-danger border-5">
-        <div class="col-12 d-flex justify-content-center">
-          <img class="logo" src="./assets/img/logo.png" alt="logo">
-        </div>
+    <div class="col-12 d-flex justify-content-center">
+      <img class="logo" src="./assets/img/logo.png" alt="logo">
+    </div>
   </div>
 
   <main class="bg-light">
@@ -36,32 +36,33 @@
         <!-- form -->
         <form action="" id="train-ticket">
           <div class="row">
-<!-- Nome e cognome -->
+            <!-- Nome e cognome -->
             <div class="col-12 mb-3">
               <span class="fw-medium">Nome e Cognome</span>
               <input type="text" id="distance-input" class="form-control mt-2" placeholder="Inserisci nome e cognome"
                 required>
             </div>
-<!-- km percorsi -->
+            <!-- km percorsi -->
             <div class="col-6">
               <span class="fw-medium">Km da percorrere</span>
               <input type="text" id="distance-input" class="form-control mt-2" placeholder="Inserisci il numero di Km"
                 required>
             </div>
-<!-- età -->
+            <!-- età -->
             <div class="col-6">
               <span class="fw-medium">Inserisci la tua età</span>
               <input type="text" id="age-input" class="form-control mt-2" placeholder="Inserisci la tua età" required>
             </div>
           </div>
-
-          <button type="submit" id="button-ticket">
-            Genera biglietto
-          </button>
-
-          <button type="reset" id="cancel">
-            Annulla
-          </button>
+          <!-- bottoni -->
+          <div class="col-12 my-4">
+            <button type="submit" class="btn btn-danger me-2 justi" id="button-ticket">
+              Acquista biglietto
+            </button>
+            <button type="reset" class="btn btn-outline-danger" id="cancel">
+              Annulla
+            </button>
+          </div>
 
           <div class="card">
             <div class="card-header">
