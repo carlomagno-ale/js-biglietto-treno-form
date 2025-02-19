@@ -5,10 +5,6 @@
   /*border: 1px dashed black;*/
 }
 
-main {
-  padding: 2rem;
-}
-
 :root {
 
   --primary-color: #d70d15;
@@ -25,5 +21,10 @@ main {
     width: 300px;
   
   }
+}
+
+.title{
+
+  font-size: 1.7rem;
 }
 
