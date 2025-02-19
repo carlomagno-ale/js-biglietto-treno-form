@@ -21,8 +21,6 @@ const distanceCard = document.querySelector('.card .distance-card')
 const ageCard = document.querySelector('.card .age-card')
 const priceCard = document.querySelector('.card .price-card')
 
-
-
 formEl.addEventListener('submit', function (e) {
 
     e.preventDefault();
@@ -58,7 +56,6 @@ formEl.addEventListener('submit', function (e) {
     distanceCard.innerHTML = distEl.value
     ageCard.innerHTML = distEl.value
     
-
  })
 
 
